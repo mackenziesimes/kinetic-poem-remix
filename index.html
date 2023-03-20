@@ -5,11 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- custom font -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik+Iso&display=swap" rel="stylesheet">
     <!-- end custom font -->
 
     <title>In the dirt</title>
@@ -17,11 +15,11 @@
     <!-- styles -->
     <style>
       body {
-        font-family: "Dosis", sans-serif;
+        font-family: 'Rubik Iso', cursive;
         margin: 2em;
         background-color: #E37F3B;
         color: white;
-        font-size: 1.7em;
+        font-size: 1.2em;
       }
       h1 {
         color: #fff;
@@ -30,7 +28,7 @@
         height: 1.2em;
       }
       .indent {
-        padding-left: 1em;
+        padding-left: 10em;
       }
     </style>
   </head>
@@ -83,7 +81,7 @@
       // implement the rules of the poem
       function processPoem() {
         counter++;
-        if (counter % 5 === 0) {
+        if (counter % 5 === 6) {
           addBlankLine();
         } else if (counter % 5 === 2 || counter % 5 === 4) {
           // if the second or fourth line add the line with an indent
